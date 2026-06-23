@@ -1,0 +1,111 @@
+{
+  "experiment": "E9-hybrid-calibrated-defense",
+  "base_experiment": "E6-end-to-end-local-rag",
+  "embedding_backend": "sqlite+hash",
+  "generator_backend": "deterministic",
+  "calibration": {
+    "fpr_budget": 0.05,
+    "semantic_threshold": 0.0924,
+    "n_dev_attack": 115,
+    "n_dev_benign": 100
+  },
+  "n_test_traces": 215,
+  "rows": {
+    "default_structural": {
+      "n_attack": 115,
+      "n_benign": 100,
+      "blocking_recall": 0.0261,
+      "attack_success_rate": 0.0,
+      "benign_blocked_fpr": 0.0,
+      "attack_style_metrics": {
+        "adaptive_policy_aware": {
+          "n": 40,
+          "blocking_recall": 0.0,
+          "attack_success_rate": 0.0
+        },
+        "regex_evasive": {
+          "n": 25,
+          "blocking_recall": 0.04,
+          "attack_success_rate": 0.0
+        },
+        "structural_visible": {
+          "n": 50,
+          "blocking_recall": 0.04,
+          "attack_success_rate": 0.0
+        }
+      }
+    },
+    "semantic_calibrated": {
+      "n_attack": 115,
+      "n_benign": 100,
+      "blocking_recall": 0.8174,
+      "attack_success_rate": 0.0,
+      "benign_blocked_fpr": 0.0,
+      "attack_style_metrics": {
+        "adaptive_policy_aware": {
+          "n": 40,
+          "blocking_recall": 0.8,
+          "attack_success_rate": 0.0
+        },
+        "regex_evasive": {
+          "n": 25,
+          "blocking_recall": 0.92,
+          "attack_success_rate": 0.0
+        },
+        "structural_visible": {
+          "n": 50,
+          "blocking_recall": 0.78,
+          "attack_success_rate": 0.0
+        }
+      }
+    },
+    "hybrid_structural_or_semantic": {
+      "n_attack": 115,
+      "n_benign": 100,
+      "blocking_recall": 0.8174,
+      "attack_success_rate": 0.0,
+      "benign_blocked_fpr": 0.0,
+      "attack_style_metrics": {
+        "adaptive_policy_aware": {
+          "n": 40,
+          "blocking_recall": 0.8,
+          "attack_success_rate": 0.0
+        },
+        "regex_evasive": {
+          "n": 25,
+          "blocking_recall": 0.92,
+          "attack_success_rate": 0.0
+        },
+        "structural_visible": {
+          "n": 50,
+          "blocking_recall": 0.78,
+          "attack_success_rate": 0.0
+        }
+      }
+    },
+    "hybrid_lowtrust_semantic": {
+      "n_attack": 115,
+      "n_benign": 100,
+      "blocking_recall": 0.8174,
+      "attack_success_rate": 0.0,
+      "benign_blocked_fpr": 0.0,
+      "attack_style_metrics": {
+        "adaptive_policy_aware": {
+          "n": 40,
+          "blocking_recall": 0.8,
+          "attack_success_rate": 0.0
+        },
+        "regex_evasive": {
+          "n": 25,
+          "blocking_recall": 0.92,
+          "attack_success_rate": 0.0
+        },
+        "structural_visible": {
+          "n": 50,
+          "blocking_recall": 0.78,
+          "attack_success_rate": 0.0
+        }
+      }
+    }
+  }
+}

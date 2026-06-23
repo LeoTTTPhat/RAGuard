@@ -1,0 +1,44 @@
+{
+  "customer_support": {
+    "experiment": "E5-customer_support",
+    "n_adversarial": 100,
+    "n_benign": 80,
+    "attack_success_rate": 0.5,
+    "warning_recall": 1.0,
+    "blocking_recall": 0.5,
+    "injection_recall": 0.5,
+    "blocked_fpr": 0.0,
+    "warning_fpr": 1.0,
+    "mean_latency_ms": 0.1,
+    "p95_latency_ms": 0.2,
+    "attribution_accuracy": "N/A (use E3)"
+  },
+  "code_assistant": {
+    "experiment": "E5-code_assistant",
+    "n_adversarial": 100,
+    "n_benign": 80,
+    "attack_success_rate": 0.0,
+    "warning_recall": 1.0,
+    "blocking_recall": 1.0,
+    "injection_recall": 1.0,
+    "blocked_fpr": 0.0,
+    "warning_fpr": 1.0,
+    "mean_latency_ms": 0.09,
+    "p95_latency_ms": 0.23,
+    "attribution_accuracy": "N/A (use E3)"
+  },
+  "llm_judge": {
+    "experiment": "E5-llm_judge",
+    "n_adversarial": 100,
+    "n_benign": 80,
+    "attack_success_rate": 0.0,
+    "warning_recall": 1.0,
+    "blocking_recall": 1.0,
+    "injection_recall": 1.0,
+    "blocked_fpr": 0.0,
+    "warning_fpr": 1.0,
+    "mean_latency_ms": 0.1,
+    "p95_latency_ms": 0.21,
+    "attribution_accuracy": "N/A (use E3)"
+  }
+}

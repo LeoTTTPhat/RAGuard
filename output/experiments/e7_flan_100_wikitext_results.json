@@ -1,0 +1,88 @@
+{
+  "experiment": "E7-real-stack-rag-mutated",
+  "n_attack_queries": 100,
+  "n_benign_queries": 500,
+  "retrieval_hit_rate": 0.43,
+  "context_warning_recall": 1.0,
+  "context_blocking_recall": 0.93,
+  "conditioned_context_warning_recall": 1.0,
+  "conditioned_context_blocking_recall": 0.907,
+  "conditioned_attack_success_rate": 0.093,
+  "attack_success_rate": 0.07,
+  "actionable_warning_recall": 0.93,
+  "tool_attempt_rate": 0.0,
+  "tool_block_rate": 0.0,
+  "shadow_tool_attempt_rate": 0.28,
+  "shadow_tool_block_rate": 1.0,
+  "benign_blocked_fpr": 0.0,
+  "benign_warning_fpr": 1.0,
+  "benign_actionable_warning_fpr": 0.0,
+  "mean_latency_ms": 78.1,
+  "p95_latency_ms": 577.26,
+  "embedding_backend": "faiss+sentence-transformers:all-MiniLM-L6-v2",
+  "generator_backend": "transformers:google/flan-t5-small",
+  "benign_corpus": "real",
+  "benign_dataset": "wikitext",
+  "baselines": {
+    "no_guard": {
+      "blocking_recall": 0.0,
+      "attack_success_rate": 1.0,
+      "benign_blocked_fpr": 0.0
+    },
+    "naive_filter": {
+      "blocking_recall": 0.71,
+      "attack_success_rate": 0.29,
+      "benign_blocked_fpr": 1.0
+    },
+    "structural_filter": {
+      "blocking_recall": 0.93,
+      "attack_success_rate": 0.07,
+      "benign_blocked_fpr": 0.0
+    },
+    "trust_block": {
+      "blocking_recall": 1.0,
+      "attack_success_rate": 0.0,
+      "benign_blocked_fpr": 1.0
+    },
+    "external_prompt_guard:testsavantai/prompt-injection-defender-tiny-v0": {
+      "blocking_recall": 0.79,
+      "attack_success_rate": 0.21,
+      "benign_blocked_fpr": 0.0
+    }
+  },
+  "category_metrics": {
+    "cross_tool_taint": {
+      "n": 25,
+      "retrieval_hit_rate": 0.24,
+      "context_warning_recall": 1.0,
+      "context_blocking_recall": 1.0,
+      "conditioned_blocking_recall": 1.0,
+      "attack_success_rate": 0.0
+    },
+    "judge_manipulation": {
+      "n": 25,
+      "retrieval_hit_rate": 0.52,
+      "context_warning_recall": 1.0,
+      "context_blocking_recall": 1.0,
+      "conditioned_blocking_recall": 1.0,
+      "attack_success_rate": 0.0
+    },
+    "memory_poisoning": {
+      "n": 25,
+      "retrieval_hit_rate": 0.6,
+      "context_warning_recall": 1.0,
+      "context_blocking_recall": 0.72,
+      "conditioned_blocking_recall": 0.7333,
+      "attack_success_rate": 0.28
+    },
+    "retrieval_injection": {
+      "n": 25,
+      "retrieval_hit_rate": 0.36,
+      "context_warning_recall": 1.0,
+      "context_blocking_recall": 1.0,
+      "conditioned_blocking_recall": 1.0,
+      "attack_success_rate": 0.0
+    }
+  },
+  "wall_clock_seconds": 378.69
+}

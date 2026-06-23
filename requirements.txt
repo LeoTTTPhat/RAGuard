@@ -1,0 +1,28 @@
+# RAGentGuard dependencies
+# Core (always required)
+# No mandatory third-party dependencies — the framework works standalone.
+
+# Optional: LangChain integration
+# langchain>=0.2.0
+# langchain-community>=0.2.0
+# langchain-openai>=0.1.0
+# chromadb>=0.5.0
+
+# Optional: open-source LLM attribution (attention rollout / gradient)
+# torch>=2.2.0
+# transformers>=4.40.0
+# sentence-transformers>=3.0.0
+# faiss-cpu>=1.8.0
+# chromadb>=0.5.0
+
+# Optional: LlamaIndex integration
+# llama-index>=0.10.0
+
+# Evaluation / data
+# datasets>=2.20.0          # for BEIR / SWE-bench loading
+# numpy>=1.26.0
+# pandas>=2.2.0
+
+# Development & testing
+pytest>=8.0.0
+pytest-cov>=5.0.0

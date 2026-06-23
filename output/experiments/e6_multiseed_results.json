@@ -1,0 +1,45 @@
+{
+  "experiment": "E6-end-to-end-local-rag-multiseed",
+  "seeds": [
+    40,
+    41,
+    42,
+    43,
+    44
+  ],
+  "n_runs": 5,
+  "metrics": {
+    "retrieval_hit_rate": {
+      "mean": 0.3563,
+      "ci95": 0.06
+    },
+    "context_blocking_recall": {
+      "mean": 0.7,
+      "ci95": 0.1139
+    },
+    "conditioned_context_blocking_recall": {
+      "mean": 0.8095,
+      "ci95": 0.1009
+    },
+    "attack_success_rate": {
+      "mean": 0.1562,
+      "ci95": 0.0671
+    },
+    "conditioned_attack_success_rate": {
+      "mean": 0.1905,
+      "ci95": 0.1009
+    },
+    "benign_blocked_fpr": {
+      "mean": 0.0,
+      "ci95": 0.0
+    },
+    "benign_actionable_warning_fpr": {
+      "mean": 0.0,
+      "ci95": 0.0
+    },
+    "mean_latency_ms": {
+      "mean": 64.2998,
+      "ci95": 9.0562
+    }
+  }
+}

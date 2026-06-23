@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use RAGentGuard in your research, please cite it as below."
+type: software
+title: "RAGentGuard: End-to-End Security and Privacy Auditing for RAG-Agent Pipelines"
+version: 0.1.0
+date-released: 2025-05-09
+license: MIT
+repository-code: ""
+abstract: >
+  RAGentGuard is the first holistic, taint-flow-based security and privacy
+  audit framework for Retrieval-Augmented Generation (RAG) agent pipelines.
+  It tracks adversarial document influence across all seven pipeline stages
+  and detects four attack categories: retrieval injection, memory poisoning,
+  judge manipulation, and cross-tool taint propagation.
+keywords:
+  - RAG security
+  - prompt injection
+  - taint tracking
+  - LLM agents
+  - adversarial ML
+preferred-citation:
+  type: unpublished
+  title: "RAGentGuard: End-to-End Security and Privacy Auditing for
+          Retrieval-Augmented Generation Agent Pipelines"
+  year: 2025
+  notes: "Preprint"

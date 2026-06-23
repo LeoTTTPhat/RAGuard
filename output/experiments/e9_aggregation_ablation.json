@@ -1,0 +1,44 @@
+{
+  "experiment": "E9-aggregation-ablation",
+  "n_attack_contexts": 120,
+  "n_benign_contexts": 300,
+  "review_threshold": 0.3,
+  "block_threshold": 0.5,
+  "rows": {
+    "max_taint": {
+      "attack_review_recall": 1.0,
+      "attack_block_recall": 1.0,
+      "benign_review_fpr": 0.3433,
+      "benign_blocked_fpr": 0.3433,
+      "review_items_per_1000_queries": 343.33
+    },
+    "length_weighted": {
+      "attack_review_recall": 0.0,
+      "attack_block_recall": 0.0,
+      "benign_review_fpr": 0.0,
+      "benign_blocked_fpr": 0.0,
+      "review_items_per_1000_queries": 0.0
+    },
+    "retrieval_score_weighted": {
+      "attack_review_recall": 0.2167,
+      "attack_block_recall": 0.0,
+      "benign_review_fpr": 0.0,
+      "benign_blocked_fpr": 0.0,
+      "review_items_per_1000_queries": 0.0
+    },
+    "attribution_weighted": {
+      "attack_review_recall": 0.9083,
+      "attack_block_recall": 0.0083,
+      "benign_review_fpr": 0.0,
+      "benign_blocked_fpr": 0.0,
+      "review_items_per_1000_queries": 0.0
+    },
+    "hybrid_max_plus_attribution": {
+      "attack_review_recall": 1.0,
+      "attack_block_recall": 1.0,
+      "benign_review_fpr": 0.3433,
+      "benign_blocked_fpr": 0.0,
+      "review_items_per_1000_queries": 343.33
+    }
+  }
+}

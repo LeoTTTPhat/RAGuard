@@ -1,0 +1,58 @@
+{
+  "retrieval_injection": {
+    "experiment": "E2-retrieval_injection",
+    "n_adversarial": 80,
+    "n_benign": 0,
+    "attack_success_rate": 0.0,
+    "warning_recall": 1.0,
+    "blocking_recall": 1.0,
+    "injection_recall": 1.0,
+    "blocked_fpr": 0.0,
+    "warning_fpr": 0.0,
+    "mean_latency_ms": 0.06,
+    "p95_latency_ms": 0.09,
+    "attribution_accuracy": "N/A (use E3)"
+  },
+  "memory_poisoning": {
+    "experiment": "E2-memory_poisoning",
+    "n_adversarial": 80,
+    "n_benign": 0,
+    "attack_success_rate": 1.0,
+    "warning_recall": 1.0,
+    "blocking_recall": 0.0,
+    "injection_recall": 0.0,
+    "blocked_fpr": 0.0,
+    "warning_fpr": 0.0,
+    "mean_latency_ms": 0.07,
+    "p95_latency_ms": 0.12,
+    "attribution_accuracy": "N/A (use E3)"
+  },
+  "judge_manipulation": {
+    "experiment": "E2-judge_manipulation",
+    "n_adversarial": 80,
+    "n_benign": 0,
+    "attack_success_rate": 0.0,
+    "warning_recall": 1.0,
+    "blocking_recall": 1.0,
+    "injection_recall": 1.0,
+    "blocked_fpr": 0.0,
+    "warning_fpr": 0.0,
+    "mean_latency_ms": 0.07,
+    "p95_latency_ms": 0.11,
+    "attribution_accuracy": "N/A (use E3)"
+  },
+  "cross_tool_taint": {
+    "experiment": "E2-cross_tool_taint",
+    "n_adversarial": 80,
+    "n_benign": 0,
+    "attack_success_rate": 0.0,
+    "warning_recall": 1.0,
+    "blocking_recall": 1.0,
+    "injection_recall": 1.0,
+    "blocked_fpr": 0.0,
+    "warning_fpr": 0.0,
+    "mean_latency_ms": 0.06,
+    "p95_latency_ms": 0.12,
+    "attribution_accuracy": "N/A (use E3)"
+  }
+}

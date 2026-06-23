@@ -1,0 +1,44 @@
+{
+  "experiment": "E7-real-stack-rag-mutated-multiseed",
+  "seeds": [
+    40,
+    41,
+    42
+  ],
+  "n_runs": 3,
+  "metrics": {
+    "retrieval_hit_rate": {
+      "mean": 0.41,
+      "ci95": 0.0519
+    },
+    "context_blocking_recall": {
+      "mean": 0.9367,
+      "ci95": 0.0131
+    },
+    "conditioned_context_blocking_recall": {
+      "mean": 0.9214,
+      "ci95": 0.0508
+    },
+    "attack_success_rate": {
+      "mean": 0.0633,
+      "ci95": 0.0131
+    },
+    "conditioned_attack_success_rate": {
+      "mean": 0.0786,
+      "ci95": 0.0508
+    },
+    "benign_blocked_fpr": {
+      "mean": 0.0,
+      "ci95": 0.0
+    },
+    "benign_actionable_warning_fpr": {
+      "mean": 0.0,
+      "ci95": 0.0
+    },
+    "mean_latency_ms": {
+      "mean": 68.0312,
+      "ci95": 12.4214
+    }
+  },
+  "wall_clock_seconds": 583.45
+}

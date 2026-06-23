@@ -1,0 +1,112 @@
+{
+  "experiment": "E8-head-to-head-identical-pipeline-baselines",
+  "primary_e8_150": [
+    {
+      "system": "No guard",
+      "blocking_recall": 0.0,
+      "attack_success_rate": 0.2133,
+      "benign_blocked_fpr": 0.0
+    },
+    {
+      "system": "Naive keyword filter",
+      "blocking_recall": 0.7667,
+      "attack_success_rate": 0.0,
+      "benign_blocked_fpr": 0.0
+    },
+    {
+      "system": "StruQ-like structural filter",
+      "blocking_recall": 0.6867,
+      "attack_success_rate": 0.0,
+      "benign_blocked_fpr": 0.0
+    },
+    {
+      "system": "Trust-only blocking",
+      "blocking_recall": 1.0,
+      "attack_success_rate": 0.0,
+      "benign_blocked_fpr": 1.0
+    },
+    {
+      "system": "External prompt classifier",
+      "blocking_recall": 0.8,
+      "attack_success_rate": 0.12,
+      "benign_blocked_fpr": 0.0
+    },
+    {
+      "system": "LLM Guard PromptInjection",
+      "blocking_recall": 0.6133,
+      "attack_success_rate": 0.1667,
+      "benign_blocked_fpr": 0.0
+    },
+    {
+      "system": "NeMo Guardrails injection detection",
+      "blocking_recall": 0.1,
+      "attack_success_rate": 0.1467,
+      "benign_blocked_fpr": 1.0
+    },
+    {
+      "system": "Semantic-intent ablation",
+      "blocking_recall": 0.8667,
+      "attack_success_rate": 0.1133,
+      "benign_blocked_fpr": 0.0
+    },
+    {
+      "system": "RAGuard default",
+      "blocking_recall": 0.6867,
+      "attack_success_rate": 0.0,
+      "benign_blocked_fpr": 0.0,
+      "warning_recall": 1.0
+    }
+  ],
+  "adaptive_e8_80": [
+    {
+      "system": "No guard",
+      "blocking_recall": 0.0,
+      "attack_success_rate": 0.0,
+      "benign_blocked_fpr": 0.0
+    },
+    {
+      "system": "Naive keyword filter",
+      "blocking_recall": 0.0125,
+      "attack_success_rate": 0.0,
+      "benign_blocked_fpr": 0.0
+    },
+    {
+      "system": "StruQ-like structural filter",
+      "blocking_recall": 0.0,
+      "attack_success_rate": 0.0,
+      "benign_blocked_fpr": 0.0
+    },
+    {
+      "system": "Trust-only blocking",
+      "blocking_recall": 1.0,
+      "attack_success_rate": 0.0,
+      "benign_blocked_fpr": 1.0
+    },
+    {
+      "system": "LLM Guard PromptInjection",
+      "blocking_recall": 0.8625,
+      "attack_success_rate": 0.0,
+      "benign_blocked_fpr": 0.0
+    },
+    {
+      "system": "NeMo Guardrails injection detection",
+      "blocking_recall": 0.05,
+      "attack_success_rate": 0.0,
+      "benign_blocked_fpr": 1.0
+    },
+    {
+      "system": "Semantic-intent ablation",
+      "blocking_recall": 0.975,
+      "attack_success_rate": 0.0,
+      "benign_blocked_fpr": 0.0
+    },
+    {
+      "system": "RAGuard default",
+      "blocking_recall": 0.0,
+      "attack_success_rate": 0.0,
+      "benign_blocked_fpr": 0.0,
+      "warning_recall": 1.0
+    }
+  ],
+  "notes": "All rows in each block use the same retrieved/assembled RAG contexts and benign FPR queries for that block."
+}

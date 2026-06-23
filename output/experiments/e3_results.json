@@ -1,0 +1,30 @@
+{
+  "ragentguard_overlap": {
+    "experiment": "E3-ragentguard-overlap",
+    "n_adversarial": 80,
+    "n_benign": 0,
+    "attack_success_rate": 1.0,
+    "warning_recall": 1.0,
+    "blocking_recall": 0.0,
+    "injection_recall": 1.0,
+    "blocked_fpr": 0.0,
+    "warning_fpr": 0.0,
+    "mean_latency_ms": 0.19,
+    "p95_latency_ms": 0.45,
+    "attribution_accuracy": 1.0
+  },
+  "random_baseline": {
+    "experiment": "E3-random-baseline",
+    "n_adversarial": 80,
+    "n_benign": 0,
+    "attack_success_rate": 1.0,
+    "warning_recall": 1.0,
+    "blocking_recall": 0.0,
+    "injection_recall": 1.0,
+    "blocked_fpr": 0.0,
+    "warning_fpr": 0.0,
+    "mean_latency_ms": 0.19,
+    "p95_latency_ms": 0.45,
+    "attribution_accuracy": 0.25
+  }
+}

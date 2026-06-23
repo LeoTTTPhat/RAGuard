@@ -1,0 +1,14 @@
+{
+  "experiment": "E4-latency",
+  "n_adversarial": 100,
+  "n_benign": 0,
+  "attack_success_rate": 0.25,
+  "warning_recall": 1.0,
+  "blocking_recall": 0.75,
+  "injection_recall": 0.75,
+  "blocked_fpr": 0.0,
+  "warning_fpr": 0.0,
+  "mean_latency_ms": 0.07,
+  "p95_latency_ms": 0.1,
+  "attribution_accuracy": "N/A (use E3)"
+}

@@ -1,0 +1,20 @@
+{
+  "experiment": "E9-scaled-operator-cost",
+  "query_workload": {
+    "n_benign_queries": 5000,
+    "n_source_clusters": 500,
+    "trust_only_info_events": 5000,
+    "aggregated_info_events_per_source_day": 500,
+    "actionable_alerts_per_1000_queries": 0.0,
+    "benign_blocks_per_1000_queries": 0.0,
+    "aggregation_reduction": 0.9
+  },
+  "tool_workload": {
+    "n_malicious_tool_calls": 100,
+    "n_benign_tool_calls": 200,
+    "malicious_block_rate": 1.0,
+    "benign_false_block_rate": 0.0,
+    "benign_review_rate": 0.125,
+    "tool_review_items_per_1000_privileged_calls": 125.0
+  }
+}

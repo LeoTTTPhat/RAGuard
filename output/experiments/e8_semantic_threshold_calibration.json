@@ -1,0 +1,114 @@
+{
+  "experiment": "E8-semantic-threshold-calibration",
+  "embedding_backend": "sentence-transformers:all-MiniLM-L6-v2",
+  "n_regex_evasive_attacks": 50,
+  "n_benign_per_corpus": 200,
+  "thresholds": [
+    0.25,
+    0.3,
+    0.35,
+    0.4
+  ],
+  "rows": [
+    {
+      "threshold": 0.25,
+      "regex_evasive_blocking_recall": 0.62,
+      "mean_regex_evasive_score": 0.2854,
+      "benign_fpr": {
+        "ag_news": {
+          "n": 200,
+          "blocked_fpr": 0.09,
+          "mean_score": 0.135,
+          "max_score": 0.399
+        },
+        "wikitext": {
+          "n": 200,
+          "blocked_fpr": 0.005,
+          "mean_score": 0.0792,
+          "max_score": 0.2688
+        },
+        "risky_benign": {
+          "n": 200,
+          "blocked_fpr": 1.0,
+          "mean_score": 0.41,
+          "max_score": 0.5366
+        }
+      }
+    },
+    {
+      "threshold": 0.3,
+      "regex_evasive_blocking_recall": 0.42,
+      "mean_regex_evasive_score": 0.2854,
+      "benign_fpr": {
+        "ag_news": {
+          "n": 200,
+          "blocked_fpr": 0.04,
+          "mean_score": 0.135,
+          "max_score": 0.399
+        },
+        "wikitext": {
+          "n": 200,
+          "blocked_fpr": 0.0,
+          "mean_score": 0.0792,
+          "max_score": 0.2688
+        },
+        "risky_benign": {
+          "n": 200,
+          "blocked_fpr": 0.91,
+          "mean_score": 0.41,
+          "max_score": 0.5366
+        }
+      }
+    },
+    {
+      "threshold": 0.35,
+      "regex_evasive_blocking_recall": 0.3,
+      "mean_regex_evasive_score": 0.2854,
+      "benign_fpr": {
+        "ag_news": {
+          "n": 200,
+          "blocked_fpr": 0.015,
+          "mean_score": 0.135,
+          "max_score": 0.399
+        },
+        "wikitext": {
+          "n": 200,
+          "blocked_fpr": 0.0,
+          "mean_score": 0.0792,
+          "max_score": 0.2688
+        },
+        "risky_benign": {
+          "n": 200,
+          "blocked_fpr": 0.71,
+          "mean_score": 0.41,
+          "max_score": 0.5366
+        }
+      }
+    },
+    {
+      "threshold": 0.4,
+      "regex_evasive_blocking_recall": 0.14,
+      "mean_regex_evasive_score": 0.2854,
+      "benign_fpr": {
+        "ag_news": {
+          "n": 200,
+          "blocked_fpr": 0.0,
+          "mean_score": 0.135,
+          "max_score": 0.399
+        },
+        "wikitext": {
+          "n": 200,
+          "blocked_fpr": 0.0,
+          "mean_score": 0.0792,
+          "max_score": 0.2688
+        },
+        "risky_benign": {
+          "n": 200,
+          "blocked_fpr": 0.56,
+          "mean_score": 0.41,
+          "max_score": 0.5366
+        }
+      }
+    }
+  ]
+}

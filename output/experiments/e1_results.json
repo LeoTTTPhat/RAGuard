@@ -1,0 +1,44 @@
+{
+  "naive_filter": {
+    "experiment": "E1-naive_filter",
+    "n_adversarial": 200,
+    "n_benign": 100,
+    "attack_success_rate": 0.695,
+    "warning_recall": 0.305,
+    "blocking_recall": 0.305,
+    "injection_recall": 0.305,
+    "blocked_fpr": 0.0,
+    "warning_fpr": 0.0,
+    "mean_latency_ms": 0.01,
+    "p95_latency_ms": 0.01,
+    "attribution_accuracy": "N/A (use E3)"
+  },
+  "struq_proxy": {
+    "experiment": "E1-struq_proxy",
+    "n_adversarial": 200,
+    "n_benign": 100,
+    "attack_success_rate": 0.25,
+    "warning_recall": 0.75,
+    "blocking_recall": 0.75,
+    "injection_recall": 0.75,
+    "blocked_fpr": 0.0,
+    "warning_fpr": 0.0,
+    "mean_latency_ms": 0.07,
+    "p95_latency_ms": 0.1,
+    "attribution_accuracy": "N/A (use E3)"
+  },
+  "ragentguard": {
+    "experiment": "E1-ragentguard",
+    "n_adversarial": 200,
+    "n_benign": 100,
+    "attack_success_rate": 0.25,
+    "warning_recall": 1.0,
+    "blocking_recall": 0.75,
+    "injection_recall": 0.75,
+    "blocked_fpr": 0.0,
+    "warning_fpr": 1.0,
+    "mean_latency_ms": 0.08,
+    "p95_latency_ms": 0.11,
+    "attribution_accuracy": "N/A (use E3)"
+  }
+}
