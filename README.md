@@ -2,13 +2,6 @@
 
 **End-to-End Security and Privacy Auditing for Retrieval-Augmented Generation Agent Pipelines**
 
-> Target venues: IEEE S&P 2026 · ACM CCS 2026 · USENIX Security 2026
-
-> **Artifact status:** Research prototype with controlled synthetic tests and
-> local end-to-end RAG evaluations.
-> See [`SOURCE_VALIDATION_REPORT.md`](SOURCE_VALIDATION_REPORT.md) for a complete
-> enumeration of what is fully implemented vs. what is simulated or proxied.
-
 ---
 
 ## Overview
